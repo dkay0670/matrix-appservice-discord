@@ -1142,6 +1142,7 @@ export class DiscordBot {
                     body: result.body,
                     format: "org.matrix.custom.html",
                     formatted_body: result.formattedBody,
+                    external_url: msg.url,
                     msgtype: result.msgtype,
                 };
                 let relatesTo: any = null;
@@ -1166,6 +1167,7 @@ export class DiscordBot {
                         body: result.body,
                         format: "org.matrix.custom.html",
                         formatted_body: result.formattedBody,
+                        external_url: msg.url,
                         msgtype: result.msgtype,
                     };
                     if (relatesTo === null) relatesTo = {}
